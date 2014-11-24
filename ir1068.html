@@ -1,0 +1,67 @@
+<head>
+  <title>ir1077</title>
+</head>
+
+<body>
+</body>
+
+<template name="layoutTemplate">
+	<div class="container">
+
+
+	<nav class="navbar navbar-default" role="navigation">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Project name</a>
+	    </div>
+	    <div id="navbar" class="navbar-collapse collapse">
+	      <ul class="nav navbar-nav">
+		      {{#each menuItems currentPath}}
+		      	<li class="{{active}}"><a href="{{path}}">{{title}}</a></li>
+		      {{/each}}
+	      </ul>
+	    </div><!--/.nav-collapse -->
+	  </div><!--/.container-fluid -->
+	</nav>
+
+	<div class="jumbotron">
+	{{>yield}}
+	</div>
+	</div>
+</template>
+
+<template name="home">
+	<h1>Hello World</h1>
+  <p>You've pressed the button {{counter}} times.</p>
+  <button>Click Me</button>
+</template>
+
+<template name="one">
+	<h1>One</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet bibendum ipsum, eu fringilla tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce porttitor leo quis enim fringilla, in congue erat bibendum. Morbi non aliquam quam. Morbi lectus odio, mollis eget quam eget, euismod iaculis mi. Nullam venenatis mi a nibh sagittis, quis porttitor nisi sodales. Quisque cursus, mi et dictum porttitor, augue lectus eleifend risus, eget dictum nisi nulla non nibh. Curabitur laoreet, eros vel gravida imperdiet, augue eros pharetra lacus, a porttitor nisi orci vitae ipsum. Maecenas euismod condimentum libero vel vulputate. Suspendisse potenti. Nulla euismod euismod tellus, ac porttitor est interdum at. Nullam eu augue ut metus hendrerit lacinia. Etiam feugiat lorem augue, vel dignissim felis tempus eu. Nulla ac lacinia neque. Aenean nec eleifend libero, at consequat nulla. Praesent laoreet eu velit et pellentesque.</p>
+
+	<p>Ut bibendum scelerisque ornare. Ut eget est ut felis porta efficitur vitae in massa. Aenean eu fermentum lectus. Integer convallis velit magna, sit amet gravida nulla aliquam commodo. Curabitur dapibus libero non enim sodales lobortis ornare eu tortor. Suspendisse et nisi pellentesque enim mattis sodales. Quisque volutpat nulla sed purus ornare dapibus. Donec et augue quis magna ullamcorper pellentesque. Ut imperdiet turpis tincidunt purus mattis, eu bibendum tellus sollicitudin. Proin viverra lacus a pharetra hendrerit.</p>
+
+	<p>Aenean nec urna at libero tempor mollis sit amet in lacus. In in nulla a lectus molestie consequat. Suspendisse lacinia dui ac lectus feugiat bibendum. Pellentesque sed diam gravida nisl faucibus iaculis. Fusce scelerisque tristique volutpat. In dignissim lacus et lectus varius interdum. Aliquam dignissim pharetra mauris eget interdum. Ut nec semper lorem. Quisque in libero ut lorem maximus tempor at laoreet felis. Morbi tempus luctus maximus. Vestibulum cursus purus massa, vitae elementum neque tincidunt nec. Donec vestibulum dictum sem, accumsan tincidunt enim consectetur vel. Nunc mollis id magna a eleifend. Fusce efficitur sagittis risus eu facilisis.</p>
+
+	<p>Sed mollis congue tellus, vitae fringilla mauris laoreet a. Nulla sed fermentum neque. Aliquam vel interdum tortor, vitae porta lectus. Sed ullamcorper mauris eget erat imperdiet sagittis. Donec aliquam, tortor eu blandit hendrerit, erat libero imperdiet sapien, non mattis mauris velit non quam. Integer pretium laoreet dui vitae fermentum. In volutpat ex enim. Suspendisse potenti. Sed ac mi ligula. Etiam congue felis at ante vulputate laoreet. Nulla facilisi. Donec commodo erat non tortor placerat, quis consequat erat facilisis. Suspendisse potenti. Fusce a finibus ante, in lobortis ipsum.</p>
+
+</template>
+
+<template name="two">
+	<h1>Two</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet bibendum ipsum, eu fringilla tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce porttitor leo quis enim fringilla, in congue erat bibendum. Morbi non aliquam quam. Morbi lectus odio, mollis eget quam eget, euismod iaculis mi. Nullam venenatis mi a nibh sagittis, quis porttitor nisi sodales. Quisque cursus, mi et dictum porttitor, augue lectus eleifend risus, eget dictum nisi nulla non nibh. Curabitur laoreet, eros vel gravida imperdiet, augue eros pharetra lacus, a porttitor nisi orci vitae ipsum. Maecenas euismod condimentum libero vel vulputate. Suspendisse potenti. Nulla euismod euismod tellus, ac porttitor est interdum at. Nullam eu augue ut metus hendrerit lacinia. Etiam feugiat lorem augue, vel dignissim felis tempus eu. Nulla ac lacinia neque. Aenean nec eleifend libero, at consequat nulla. Praesent laoreet eu velit et pellentesque.</p>
+
+	<p>Ut bibendum scelerisque ornare. Ut eget est ut felis porta efficitur vitae in massa. Aenean eu fermentum lectus. Integer convallis velit magna, sit amet gravida nulla aliquam commodo. Curabitur dapibus libero non enim sodales lobortis ornare eu tortor. Suspendisse et nisi pellentesque enim mattis sodales. Quisque volutpat nulla sed purus ornare dapibus. Donec et augue quis magna ullamcorper pellentesque. Ut imperdiet turpis tincidunt purus mattis, eu bibendum tellus sollicitudin. Proin viverra lacus a pharetra hendrerit.</p>
+
+	<p>Aenean nec urna at libero tempor mollis sit amet in lacus. In in nulla a lectus molestie consequat. Suspendisse lacinia dui ac lectus feugiat bibendum. Pellentesque sed diam gravida nisl faucibus iaculis. Fusce scelerisque tristique volutpat. In dignissim lacus et lectus varius interdum. Aliquam dignissim pharetra mauris eget interdum. Ut nec semper lorem. Quisque in libero ut lorem maximus tempor at laoreet felis. Morbi tempus luctus maximus. Vestibulum cursus purus massa, vitae elementum neque tincidunt nec. Donec vestibulum dictum sem, accumsan tincidunt enim consectetur vel. Nunc mollis id magna a eleifend. Fusce efficitur sagittis risus eu facilisis.</p>
+
+	<p>Sed mollis congue tellus, vitae fringilla mauris laoreet a. Nulla sed fermentum neque. Aliquam vel interdum tortor, vitae porta lectus. Sed ullamcorper mauris eget erat imperdiet sagittis. Donec aliquam, tortor eu blandit hendrerit, erat libero imperdiet sapien, non mattis mauris velit non quam. Integer pretium laoreet dui vitae fermentum. In volutpat ex enim. Suspendisse potenti. Sed ac mi ligula. Etiam congue felis at ante vulputate laoreet. Nulla facilisi. Donec commodo erat non tortor placerat, quis consequat erat facilisis. Suspendisse potenti. Fusce a finibus ante, in lobortis ipsum.</p>
+
+</template>
